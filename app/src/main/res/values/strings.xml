@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Matches Simullator App</string>
+    <string name="tvHello">Hello World!</string>
 </resources>
