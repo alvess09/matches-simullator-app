@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">Matches Simullator App</string>
-    <string name="tvHello">Hello World!</string>
+    <string name="app_name">Simulator</string>
+    <string name="cd_simulate">Matches simulation button</string>
+    <string name="cd_home_team">Home team image</string>
+
+    <string name="txt_versus" translatable="false">X</string>
+    <string name="away_team_image">Away Team image</string>
 </resources>
