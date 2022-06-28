@@ -6,6 +6,7 @@
         <entry key="..\:/PROJETOS/MobileProjects/MatchesSimullatorApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1265" />
         <entry key="..\:/PROJETOS/MobileProjects/MatchesSimullatorApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1265" />
         <entry key="..\:/PROJETOS/MobileProjects/MatchesSimullatorApp/app/src/main/res/drawable/ic_simulate.xml" value="0.188" />
+        <entry key="..\:/PROJETOS/MobileProjects/MatchesSimullatorApp/app/src/main/res/layout/activity_detail.xml" value="0.22" />
         <entry key="..\:/PROJETOS/MobileProjects/MatchesSimullatorApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/PROJETOS/MobileProjects/MatchesSimullatorApp/app/src/main/res/layout/match_item.xml" value="0.25" />
       </map>
@@ -16,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
