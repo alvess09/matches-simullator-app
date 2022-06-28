@@ -11,8 +11,8 @@ IN DEVELOPMENT! ..
 [X] 2 Components, layouts and UI/UX in Android apps </br>
 ## Backend
 [X] 1 Consuming API with Retrofit and Glide</br>
-[X] 2 </br>
-[X] 3</br>
+[X] 2 Creating API in GitHub Pages </br>
+[X] 3 </br>
 [X] 6</br>
 [X] 7</br>
 

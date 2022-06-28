@@ -1,4 +1,4 @@
-package com.alvesariel.matchessimullatorapp
+package com.alvesariel.matchessimullatorapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

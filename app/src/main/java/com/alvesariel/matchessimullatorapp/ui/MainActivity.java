@@ -1,4 +1,4 @@
-package com.alvesariel.matchessimullatorapp;
+package com.alvesariel.matchessimullatorapp.ui;
 
 import android.os.Bundle;
 
@@ -15,5 +15,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        setupMatchesList();
+        setupMatchesRefresh();
+        setupFloatingActionButton()
     }
+
+
+
+    private void setupMatchesList() {
+        //TODO listar as partidas, consumindo a API.
+    }
+
+    private void setupFloatingActionButton() {
+        //TODO criar evento de click e simulação de partidas
+    }
+
+    private void setupMatchesRefresh() {
+        //TODO atualizar as partidas na ação de swipe
+    }
+
 }
