@@ -1,8 +1,14 @@
 package com.alvesariel.matchessimullatorapp.domain
 
+import com.google.gson.annotations.SerializedName
+
 data class Match(
+    @SerializedName("descricao")
     val description: String,
+    @SerializedName("local")
     val place : Place,
+    @SerializedName("mandante")
     val homeTeam: Team,
-    val awayTeam: Tea
-) 
+    @SerializedName("visitante")
+    val awayTeam: Team
+)

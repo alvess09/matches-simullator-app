@@ -5,5 +5,7 @@
     <string name="cd_home_team">Imagem do time mandante</string>
     <string name="away_team_image">Imagem do time visitante</string>
 
+    <string name="error_api"> Falha na rede! Verifique a conexão com internet</string>
+
 
 </resources>

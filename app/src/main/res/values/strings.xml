@@ -5,4 +5,6 @@
 
     <string name="txt_versus" translatable="false">X</string>
     <string name="away_team_image">Away Team image</string>
+
+    <string name="error_api"> Unexpected error</string>
 </resources>
