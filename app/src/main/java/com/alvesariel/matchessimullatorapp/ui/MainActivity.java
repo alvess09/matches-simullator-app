@@ -1,5 +1,7 @@
 package com.alvesariel.matchessimullatorapp.ui;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -57,33 +59,48 @@ public class MainActivity extends AppCompatActivity {
         binding.rvMatches.setHasFixedSize(true);
         binding.rvMatches.setLayoutManager(new LinearLayoutManager(this));
 
-       matchesApi.getMatches().enqueue(new Callback<List<Match>>() {
-
-           @Override
-           public void onResponse(Call<List<Match>> call, Response<List<Match>> response) {
-               if(response.isSuccessful()){
-                   //recuperando as informaçõe em lista
-                   List<Match> matches = response.body();
-                   matchesAdapter = new MatchesAdapter(matches);
-                   binding.rvMatches.setAdapter(matchesAdapter);
-               }else{
-                   showErrorMessage();
-               }
-           }
-
-           @Override
-           public void onFailure(Call<List<Match>> call, Throwable t) {
-                showErrorMessage();
-           }
-       });
+        findMatchesFromApi();
     }
 
+
+
     private void setupFloatingActionButton() {
-        //TODO criar evento de click e simulação de partidas
+        binding.fabSimulate.setOnClickListener(view -> {
+            view.animate().rotationBy(360).setDuration(500).setListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    //TODO implementar o algoritmo de sim de partidas
+                }
+            });
+        });
     }
 
     private void setupMatchesRefresh() {
-        //TODO atualizar as partidas na ação de swipe
+        binding.srlMatches.setOnRefreshListener(this::findMatchesFromApi);
+    }
+
+    private void findMatchesFromApi() {
+        binding.srlMatches.setRefreshing(true);
+        matchesApi.getMatches().enqueue(new Callback<List<Match>>() {
+
+            @Override
+            public void onResponse(Call<List<Match>> call, Response<List<Match>> response) {
+                if(response.isSuccessful()){
+                    //recuperando as informaçõe em lista
+                    List<Match> matches = response.body();
+                    matchesAdapter = new MatchesAdapter(matches);
+                    binding.rvMatches.setAdapter(matchesAdapter);
+                }else{
+                    showErrorMessage();
+                }
+                binding.srlMatches.setRefreshing(false);
+            }
+
+            @Override
+            public void onFailure(Call<List<Match>> call, Throwable t) {
+                showErrorMessage();
+            }
+        });
     }
 
     private void showErrorMessage() {
