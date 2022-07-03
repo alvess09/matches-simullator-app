@@ -30,12 +30,12 @@ IN DEVELOPMENT! ..
 > https://github.com/digitalinnovationone
 
 
-> Documentation to the libraries
-> Retrofit 
-> https://github.com/square/retrofit
-> Glide
-> https://github.com/bumptech/glide
-> Parcelable
+> Documentation to the libraries </br>
+> Retrofit </br>
+> https://github.com/square/retrofit </br>
+> Glide </br>
+> https://github.com/bumptech/glide </br>
+> Parcelable </br>
 > https://developer.android.com/kotlin/parcelize?hl=pt-br
 
 
