@@ -5,7 +5,6 @@
 
 ## This Project contain 🚀
 
-IN DEVELOPMENT! ..
 ## Frontend
 [X] 1 Develop native from Android apps  </br>
 [X] 2 Components, layouts and UI/UX in Android apps </br>
